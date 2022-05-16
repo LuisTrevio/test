@@ -342,14 +342,17 @@ footer {
     footer {
         position: fixed;
         bottom: 0;
+        pointer-events: none;
     }
 
     .wrap-footer{
+        pointer-events: none;
         transform: translate(0,50px);
         opacity: 0;
     }
 
     .endscroll {
+        pointer-events: auto;
         opacity: 1;
         transform: translate(0,0);
     }/*Procede a ocultarse al llegar al final de la página*/
