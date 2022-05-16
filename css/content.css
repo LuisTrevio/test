@@ -35,10 +35,10 @@
     padding: 0;
     padding-bottom: 20px;
 
-    border: 2px solid #111;
-    background-color: rgb(235, 255, 255);
+    border: 2px solid var(--border);
+    background-color: var(--bgblock);
     filter: saturate(80%);
-    color: black;
+    color: var(--text);
 
     border-radius: 20px;
 
@@ -147,10 +147,10 @@ a:hover {
     padding: 0;
     padding-bottom: 20px;
 
-    border: 2px solid #111;
-    background-color: rgb(235, 255, 255);
+    border: 2px solid var(--border);
+    background-color: var(--bgblock);
     filter: saturate(80%);
-    color: black;
+    color: var(--text);
 
     border-radius: 20px;
 
