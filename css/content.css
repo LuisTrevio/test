@@ -279,7 +279,6 @@ a:hover {
         padding-left: 0;
         padding-right: 0; 
         font-size: 90px;
-        padding-bottom: 300px;
     }
 
     .solid-text {
@@ -337,7 +336,7 @@ footer {
 
 @media (max-width:1440px) {
     .neo {
-        padding-bottom: 200px;
+        padding-bottom: 300px;
     }
 
     footer {
