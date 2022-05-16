@@ -1,0 +1,100 @@
+/*IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+*,::after, ::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    --bgheader: linear-gradient(
+        40deg,
+        hsl(199deg 95% 63%) 0%,
+        hsl(196deg 93% 60%) 11%,
+        hsl(193deg 92% 56%) 22%,
+        hsl(191deg 90% 52%) 33%,
+        hsl(188deg 98% 47%) 44%,
+        hsl(186deg 100% 46%) 56%,
+        hsl(185deg 94% 46%) 67%,
+        hsl(183deg 78% 49%) 78%,
+        hsl(180deg 69% 51%) 89%,
+        hsl(177deg 68% 54%) 100%
+      );
+    --button: rgb(0, 255, 200);
+    --window: rgba(0, 255, 200, 0.527);
+
+    --bar: rgb(51 205 172);
+    --bgbar: rgb(193 255 245);
+    --borderbar: rgb(0, 0, 0);
+    --bgfooter: linear-gradient(
+        40deg,
+        hsl(199deg 95% 63%) 0%,
+        hsl(196deg 93% 60%) 11%,
+        hsl(193deg 92% 56%) 22%,
+        hsl(191deg 90% 52%) 33%,
+        hsl(188deg 98% 47%) 44%,
+        hsl(188deg 98% 47%) 56%,
+        hsl(191deg 90% 52%) 67%,
+        hsl(193deg 92% 56%) 78%,
+        hsl(196deg 93% 60%) 89%,
+        hsl(199deg 95% 63%) 100%  
+      );
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+    background: var(--bgbar)
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    border: 1px solid var(--bgbar);
+    background: var(--bar)
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: none;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+button {
+    border: none;
+}
+
+br {
+    user-select: none;
+}
+
+.scroll-disable {
+    overflow-y: hidden;
+}
+
+@media (max-width:780px) {
+
+}

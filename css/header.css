@@ -1,0 +1,213 @@
+header {
+    width: 100%;
+    height: 60px;
+    padding: 0 90px 0 90px;
+    position: fixed;
+
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    z-index: 3;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1441px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-image: var(--bgheader);
+     filter: saturate(80%);
+      border-bottom: 2px solid rgb(0, 0, 0);
+      border-left:  2px solid rgb(0, 0, 0);
+      border-right:  2px solid rgb(0, 0, 0);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding-top: 30px;
+
+    border-radius: 0 0 20px 20px;
+
+    transition: 0.2s ease-out;
+
+    font-size: 40px;
+}
+
+@media (max-width:780px) {
+    header {
+        padding: 0;
+    }
+    
+    .wrap {
+      padding-left: 20px;
+      padding-right: 20px;
+  
+      padding-top: 30px;
+
+      border-bottom: 2px solid rgb(0, 0, 0);
+      border-left:  none;
+      border-right:  none;
+      border-radius: 0 0 1px 1px;
+    }
+}
+
+@media (min-width:1441px) {
+    .wrap {
+        border-bottom: 3px solid rgb(0, 0, 0);
+      border-left:  3px solid rgb(0, 0, 0);
+      border-right:  3px solid rgb(0, 0, 0);
+    }
+}
+
+.active {
+    height: 55px;
+    padding-top: 5px;
+    font-size: 30px;
+
+    transition: 0.2s ease-out;
+} /*Cuando se desliza se "activa" 
+ */
+
+button {
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    display: flex;
+
+    z-index: 2;
+    background-color: rgb(12, 12, 12);
+
+    border-radius: 10px;
+    outline-offset: 2px;
+
+    cursor: pointer;
+}
+
+.button-in {
+    content: '';
+
+    width: 40px;
+    height: 40px;
+
+    padding: 10px 8px 20px 8px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    gap: 4px;
+
+    z-index: 1;
+    background-color: var(--button);
+     border: 1px solid #111;
+      filter: saturate(80%);
+
+    border-radius: 8px;
+
+    transform: translate(-3px ,-3px);
+}
+
+button:active .button-in {
+    transform: translate(0,-2px);
+}
+
+.bar-1, .bar-2, .bar-3 {
+    width: 100%;
+    height: 4px;
+
+    background-color: rgb(0, 0, 0);
+
+    border-radius: 8px;
+} 
+
+.logo {
+    display: flex;
+}
+
+.text {
+    font-family: 'Josefin Sans', sans-serif;
+
+    padding-top: 8px;
+     font-weight: bold;
+    color: rgb(7, 7, 7);
+      text-shadow: 0 0 1px #000000, 0 0 1px #000000;
+      z-index: 2;
+      display: flex;
+
+    transform: translate(1px, 1px);
+}
+
+.window {
+    width: 100%;
+    height: 100%;
+
+    background: var(--window);
+
+    position:fixed;
+
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 90px;
+
+    transition: 0.2s ease-out;
+    opacity: 0;
+    
+    pointer-events: none;
+}
+
+.window-on {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.header-window {
+    height: 55px;
+    padding-top: 5px;
+    font-size: 30px;
+
+    transition: 0.2s ease-out;
+}
+
+.Menu-Box {
+    width: 100%;
+    max-width: 1441px;
+    height: 400px;
+
+    transition: 0.2s ease-out;
+    opacity: 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    gap: 20px;
+}
+
+.menu-woop {
+    opacity: 1
+}
+
+.Button-Win {
+    background: var(--bgheader);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+@media (max-width:780px) { 
+    .Menu-Box {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+}
