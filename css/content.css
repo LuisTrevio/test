@@ -196,7 +196,7 @@ a:hover {
 }
 
 .eme-2 {
-    background-image: url(../../static/burble.svg);
+    background-image: url(../burble.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: rgba(1, 141, 255, 0.603);
