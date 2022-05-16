@@ -27,11 +27,10 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 body {
     --bgheader: linear-gradient(
         40deg,
-        hsl(199deg 95% 63%) 0%,
+        hsl(199, 95%, 63%) 0%,
         hsl(196deg 93% 60%) 11%,
         hsl(193deg 92% 56%) 22%,
         hsl(191deg 90% 52%) 33%,
@@ -40,7 +39,7 @@ body {
         hsl(185deg 94% 46%) 67%,
         hsl(183deg 78% 49%) 78%,
         hsl(180deg 69% 51%) 89%,
-        hsl(177deg 68% 54%) 100%
+        hsl(177, 68%, 54%) 100%
       );
     --button: rgb(0, 255, 200);
     --window: rgba(0, 255, 200, 0.527);
@@ -61,6 +60,20 @@ body {
         hsl(196deg 93% 60%) 89%,
         hsl(199deg 95% 63%) 100%  
       );
+
+    --border: #111;
+    --text: black;
+    --bg-block: rgb(235, 255, 255);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+        --border: rgb(255, 255, 255);
+        --bgbar: rgb(36, 36, 36);
+         --text: rgb(255, 255, 255);
+        --bg-block: rgb(0, 0, 0);
+    }
 }
 
 body::-webkit-scrollbar {
