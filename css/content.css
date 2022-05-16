@@ -36,9 +36,9 @@
     padding-bottom: 20px;
 
     border: 2px solid #111;
-    background-color: rgb(195, 255, 255);
+    background-color: rgb(235, 255, 255);
     filter: saturate(80%);
-    color: azure;
+    color: black;
 
     border-radius: 20px;
 
@@ -148,7 +148,7 @@ a:hover {
     padding-bottom: 20px;
 
     border: 2px solid #111;
-    background-color: rgb(195, 255, 255);
+    background-color: rgb(235, 255, 255);
     filter: saturate(80%);
     color: black;
 
