@@ -1,7 +1,12 @@
-<svg width="481" height="200" viewBox="0 0 481 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="50" cy="89" r="50" fill="#0796FD" fill-opacity="0.17"/>
-<circle cx="121" cy="123" r="50" fill="#0796FD" fill-opacity="0.17"/>
-<circle cx="230" cy="50" r="50" fill="#0796FD" fill-opacity="0.17"/>
-<circle cx="330" cy="150" r="50" fill="#0796FD" fill-opacity="0.17"/>
-<circle cx="431" cy="89" r="50" fill="#0796FD" fill-opacity="0.17"/>
+<svg width="483" height="411" viewBox="0 0 483 411" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="300" r="50" fill="#0796FD" fill-opacity="0.17"/>
+<circle cx="121" cy="334" r="50" fill="#0796FD" fill-opacity="0.17"/>
+<circle cx="230" cy="261" r="50" fill="#0796FD" fill-opacity="0.17"/>
+<circle cx="330" cy="361" r="50" fill="#0796FD" fill-opacity="0.17"/>
+<circle cx="431" cy="300" r="50" fill="#0796FD" fill-opacity="0.17"/>
+<circle cx="354.982" cy="166.982" r="50" transform="rotate(178.864 354.982 166.982)" fill="#0796FD" fill-opacity="0.17"/>
+<circle cx="431.982" cy="82.9816" r="50" transform="rotate(178.864 431.982 82.9816)" fill="#0796FD" fill-opacity="0.17"/>
+<circle cx="199.982" cy="50.9816" r="50" transform="rotate(178.864 199.982 50.9816)" fill="#0796FD" fill-opacity="0.17"/>
+<circle cx="248.982" cy="72.9816" r="50" transform="rotate(178.864 248.982 72.9816)" fill="#0796FD" fill-opacity="0.17"/>
+<circle cx="78.9815" cy="131.982" r="50" transform="rotate(178.864 78.9815 131.982)" fill="#0796FD" fill-opacity="0.17"/>
 </svg>
