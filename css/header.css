@@ -205,6 +205,10 @@ button:active .button-in {
 }
 
 @media (max-width:780px) { 
+    .window {
+        padding: 30px;
+    }
+    
     .Menu-Box {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
