@@ -45,7 +45,7 @@ body {
     --window: rgba(0, 255, 200, 0.527);
 
     --bar: rgb(51 205 172);
-    --bgbar: rgb(235 245 243)
+    --bgbar: rgb(235 245 243);
     --borderbar: rgb(0, 0, 0);
     --bgfooter: linear-gradient(
         40deg,
