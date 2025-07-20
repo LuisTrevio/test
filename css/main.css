@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@2010&family=Inter:opsz,wght@14..32,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*  font-family: "Montserrat", sans-serif;  */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+
+    --Montserrat: 'Montserrat', sans-serif;
+    --Inter: 'Inter', sans-serif;
+    --ClimateCrisis: 'Climate Crisis', sans-serif;
+}
+
+*,::after,::before {box-sizing: border-box;}
+
+html,body {height: 100%;}
+
+::selection {background-color: var(--navi-blue);}
+
+input,button,textarea,select {font: inherit;}
+
+a {text-decoration: none;}
+
+button {border: none;}
+
+br {
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+body {
+    background: var(--background);
+    color: var(--black);
+}
+
+body {
+    --navi-blue: #1a69e07c;
+    --white: #ffffff;
+    --black: #000000;
+
+    --header: #000000;
+    --header-on: #000000;
+
+    --background: #f0f0f0;
+    --bg-box: #3a3939;
+    
+    --shoppify: #436702;
+    --shoppify-on: #4a7b02;
+
+    --bar-filter: #545454;
+    --bar-filter-on: rgb(0, 0, 0);
+    --button-buy: #000000;
+    --button-buy-on: #4f5361;
+}
+
+@media (max-width: 780px) {
+.scroll-frost {
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+}
+
+
+.effect-see {
+    transform: scale(0.98);
+    transition: 0.2s ease-out;
+    transition-property: transform;
+    transition-delay: 50ms;
+}
+
+content {transition-delay: 50ms;}

@@ -1,0 +1,124 @@
+.icon-logo {
+    width: 80px;
+    height: 100%;
+
+    background-image: url(logotipo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    background-position: center;
+}
+
+.d-icon {
+    width: 20px;
+    height: 20px; 
+
+    background-image: url(down.svg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+}
+
+.nav-link:hover .d-icon {
+    transform: rotate(180deg);
+}
+
+.r90deg {
+    transform: rotate(90deg);
+}
+
+.r-90deg {
+    transform: rotate(-90deg);
+}
+
+.icon-user {
+    width: 20px;
+    height: 20px;
+
+    background-image: url(user.svg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+}
+
+.filter-icon {
+    width: 25px;
+    height: 25px;
+
+    background-image: url(mdi_filter.svg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+}
+
+.img-proyect {
+    width: 24px;
+    height: 24px;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:780px) {
+   .proyect-box {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .filter-icon {width: 20px; height: 20px;}
+}
+
+.id-proyect:hover .title-proyect > .img-proyect {animation: slide-svg 0.45s ease-in-out;}
+.img-burble:hover .title-proyect > .img-proyect {animation: slide-svg 0.45s ease-in-out;}
+
+
+.close-svg {background-image: url(maki_cross.svg); background-size: 68%;}
+
+.check-icon {
+    width: 14px;
+    height: 14px;
+
+    background-image: url(material-symbols_check.svg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+}
+
+.Shop-icon {
+    width: 107px;
+    height: 107px;
+    
+    background-image: url(logos_shopify.svg);
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+
+}
+
+.see-icon {
+    width: 24px;
+    height: 24px;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url(nosee.svg);
+    filter: invert(1);
+
+    transition: 0.2s ease-out;
+}
+
+.nosee-btn {
+    background-image: url(see.svg);
+    background-position: 0 0.2px;
+}

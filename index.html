@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="css/favicon.svg"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#000000" />
+        <meta
+        name="description"
+        content="texto descripcion..."
+        />
+        <title> Pop Store </title>
+
+        <!-- TARJETA PARA REDES SOCIALES -->
+        <meta property="og:title" content="Rrtevl">
+        <meta property="og:description:" content="Shop">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="http://luistrevio.github.io/test/bg/rt.png">
+        <meta property="og:image:alt" content="">
+        <meta property="og:image:width" content="1280">
+        <meta property="og:image:height" content="675">
+
+        <!-- TARJETA PARA TWITTER//X -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@Luistrevio4">
+        <meta name="twitter:title" content="Rrtevl">
+        <meta name="twitter:description" content="Shop">
+        <meta name="twitter:image" content="http://luistrevio.github.io/test/bg/rt.png">
+        <meta name="twitter:image:alt" content="">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="icons/icons.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/content.css">
+        <link rel="stylesheet" type="text/css" href="css/pop.css">
+
+        <script defer src="js/main.js"></script>
+    </head>
+    <body ontouchstart="" class="scr-fr">
+        <header>
+            <nav>
+                <div onclick="ClickMenu()" class="menu-button">
+                    <span class="bar-1 br-1"></span>
+                    <span class="bar-2 br-2"></span>
+                    <span class="bar-3 br-3"></span>
+                </div>
+
+                <div class="logo">
+                    <div class="icon-logo"></div>
+                    <div class="icon-cart">Store</div>
+                </div>
+                <div class="nav-links">
+                    <a href="about.html" class="nav-link">¿Quienes Somos?</a>
+
+                    <div class="nav-link nav-low">Servicio&nbsp;<div class="d-icon"></div>
+                        <div class="box">
+                            <div class="grid-box">
+                                <a href="#" class="sub-link">Politica de envio</a>
+                                <a href="#" class="sub-link">Garantias y devoluciones</a>
+                                <a href="#" class="sub-link">Terminos y condiciones</a>
+                                <a href="#" class="sub-link">Preguntas Frecuentes</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <a href="contact.html" class="nav-link">Blog</a>
+                </div>
+                <button  onclick="Pop(), PopUser()"  class="button-shopify">Iniciar con Shopify</button>
+
+                <button onclick="Pop(), PopUser()" class="button-shopify-mb disable-shop"><div class="icon-user"></button>
+            </nav>
+
+            <div class="menu-full menu-on">
+                <div class="menu-nav-grid smooth width-menu">
+                    <div class="flex-out">
+                    <a href="#" class="nav-link-mb tras">¿Quienes Somos?</a>
+                    <div onclick="ServiceClick()" class="nav-link-mb tras serv-nav">Servicio&nbsp;<div class="d-icon r-90deg"></div></div>
+                    <a href="#" class="nav-link-mb tras">Blog</a>
+                    </div>
+                    <div onclick="ClickMenu(), Pop(), PopUser()" class="sesion-box tras">Inicia sesion con Shopify</div>
+                </div>
+                <div class="servicios-grid service">
+                        <div onclick="ServiceClick()" class="nav-link-mb"><div class="d-icon r90deg"></div>&nbsp;Servicio</div>
+                    <a href="#" class="nav-link-mb2 fast">Politica de envio</a>
+                    <a href="#" class="nav-link-mb2 fast">Garantias y devoluciones</a>
+                    <a href="#" class="nav-link-mb2 fast">Terminos y condiciones</a>
+                    <a href="#" class="nav-link-mb2 fast">Preguntas Frecuentes</a>
+               
+                </div>
+            </div> 
+        </header>
+
+        <div onclick="Pop()" class="Pop Pop-Exit Pop-md"> <!-- Ventana de fondo para los POPS --> </div>
+
+
+        <content class="see">
+            <div class="content-wrapper">
+                <div class="panel-shop">
+                    <div class="filter-category">
+                        <div class="content-filter filter-category">
+                            <div class="filter-text all">Todos</div>
+                            <div class="filter-text tshirt">Camisetas</div>
+                            <div class="filter-text hat">Gorros</div>
+                                <div class="filter-ball slur"></div>
+                        </div>
+                    </div>
+                    <div class="shop-category">
+                        <div alt="button-filter-desk" class="filter-button"><div class="filter-icon"></div>
+                            <div class="box box-filter">
+                            <div class="grid-box wt-bg">
+                                <div class="box-order">
+                                    <button class="sort-btn box-nav" data-sort="default">
+                                        <div class="first-box">
+                                            <div class="icon-order">
+                                                <b class="n-1">$</b>
+                                                <b class="n-3">$</b>
+                                                <b class="n-2">$</b>
+                                            </div>
+                                            <div class="check-order"><div class="check-icon"></div></div>
+                                        </div>
+                                        <div class="second-box">Por Relevancia</div>
+                                    </button>
+                
+                                    <button class="sort-btn box-nav" data-sort="desc">
+                                        <div class="first-box">
+                                            <div class="icon-order">
+                                                <b class="n-1">$</b>
+                                                <b class="n-2">$</b>
+                                                <b class="n-3">$</b></div>
+                                           <div class="check-order"><div class="check-icon"></div></div>
+                                        </div>
+                                        <div class="second-box">De Mayor a Menor</div>
+                                    </button>
+
+                                    <button class="sort-btn box-nav" data-sort="asc">
+                                        <div class="first-box">
+                                            <div class="icon-order">
+                                                <b class="n-3">$</b>
+                                                <b class="n-2">$</b>
+                                                <b class="n-1">$</b>
+                                            </div>
+                                            <div class="check-order"><div class="check-icon"></div></div>
+                                        </div>
+                                        <div class="second-box">De Menor a Mayor</div>
+                                    </button>
+
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                          <div class="filter-buy-button">
+                            <div class="icon-buy"></div>
+                            <div class="icon-number">0</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="shop-category-mb blur-sh">
+                        <div onclick="Pop(), PopMar()" class="filter-button-mb">
+                            <div class="filter-icon"></div>&nbsp;Ordernar
+                        </div>
+
+                        <div class="filter-buy-button">
+                            <div class="icon-buy"></div>
+                            <div class="icon-number">0</div>
+                        </div>
+                </div>
+                <div class="shop-items-wrapper">
+                    <div class="window blur"></div>
+
+                    <div class="shop-items hat">
+                        <div class="item-img"></div>
+                        <div class="item-name">
+                            <div class="sub-title">Gorros</div>
+                            Gorro Gris
+                        </div>
+                        <div class="item-price data-price">$80.00 MXN</div>
+                    </div>
+
+                    <div class="shop-items tshirt">
+                        <div class="item-img"></div>
+                        <div class="item-name">
+                            <div class="sub-title">Camisetas</div>
+                            Camiseta de Algodon
+                        </div>
+                        <div class="item-price data-price">$120.00 MXN</div>
+                    </div>
+
+                    <div class="shop-items hat">
+                        <div class="item-img"></div>
+                        <div class="item-name">
+                            <div class="sub-title">Gorros</div>
+                            Gorro Cap
+                        </div>
+                        <div class="item-price data-price">$70.00 MXN</div>
+                    </div>
+
+                    <div class="shop-items tshirt">
+                        <div class="item-img"></div>
+                        <div class="item-name">
+                            <div class="sub-title">Camisetas</div>
+                            Camiseta Deluxe
+                        </div>
+                        <div class="item-price data-price">$210.00 MXN</div>
+                    </div>
+
+                    <div class="shop-items tshirt">
+                        <div class="item-img"></div>
+                        <div class="item-name">
+                            <div class="sub-title">Camisetas</div>
+                            Camiseta azul glaciar
+                        </div>
+                        <div class="item-price data-price">$180.00 MXN</div>
+                    </div>
+
+                </div>
+            </div>
+        </content>
+
+        <div class="flex-pop"><!-- -->
+            <div class="margin-pop-close">
+                <button onclick="Pop()" class="Pop-Close close-up ">
+                    <span class="img-proyect close-svg"></span>Cerrar&nbsp;
+                </button>
+            </div>
+            
+            <div class="Pop-User Pop-User-O">
+                 <br>
+                <div class="Pop-burble"><div class="Shop-icon"></div></div>
+                <div class="Pop-center"><h2>Inicia sesion con Shopify</h2></div><br>
+                    <form method="post" class="text-area">
+                        <input class="email-type" type="email" placeholder="Correo Electronico">
+                        <div class="flex-text">
+                            <input class="pass-type" type="password" placeholder="Contraseña">
+                            <div class="pass-btn"><div class="pass-eye see-icon"></div></div>
+                        </div>
+                        <button class="post-rev">Iniciar sesion</button>
+                        <a class="link-rev">Olvidaste tu contraseña</a>
+                    </form>
+                    <br><hr>
+                <button class="post-rev-cre">Crear cuenta con Shopify</button>
+                <br>
+            </div>
+
+            <div class="Pop-Marque Pop-Marque-O">
+                <br>
+                <div class="Pop-center"><h2>Ordernar por</h2></div>
+
+                <div class="box-order">
+                    <button onclick="Pop()" class="sort-btn box-nav" data-sort="default">
+                        <div class="first-box">
+                            <div class="icon-order">
+                                <b class="n-1">$</b>
+                                <b class="n-3">$</b>
+                                <b class="n-2">$</b>
+                            </div>
+                            <div class="check-order"><div class="check-icon"></div></div>
+                        </div>
+                        <div class="second-box">Por Relevancia</div>
+                    </button>
+  
+                    <button onclick="Pop()" class="sort-btn box-nav" data-sort="desc">
+                        <div class="first-box">
+                            <div class="icon-order">
+                                <b class="n-1">$</b>
+                                <b class="n-2">$</b>
+                                <b class="n-3">$</b></div>
+                           <div class="check-order"><div class="check-icon"></div></div>
+                        </div>
+                        <div class="second-box">De Mayor a Menor</div>
+                    </button>
+
+                    <button onclick="Pop()" class="sort-btn box-nav" data-sort="asc">
+                        <div class="first-box">
+                            <div class="icon-order">
+                                <b class="n-3">$</b>
+                                <b class="n-2">$</b>
+                                <b class="n-1">$</b>
+                            </div>
+                            <div class="check-order"><div class="check-icon"></div></div>
+                        </div>
+                        <div class="second-box">De Menor a Mayor</div>
+                    </button>
+
+                </div> 
+            </div>
+
+        </div>
+    </body>
+
+</html>
