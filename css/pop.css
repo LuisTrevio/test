@@ -310,6 +310,7 @@
     flex-direction: column;
 
     border: 2px solid rgb(210, 210, 210);
+    color: #000000;
 
     border-radius: 22px;
     padding: 8px;
@@ -403,6 +404,7 @@ input {text-decoration: none; border: none;}
     background-color: rgb(212, 212, 212);
     border-radius: 20px;
     padding: 16px;
+     font-size: 1rem;
 }
 
 .pass-type {
