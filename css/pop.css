@@ -205,7 +205,7 @@
 
     z-index: 5;
 
-    transform: scale(0.98);
+    transform: scale(0.98) translate(0, 20px);
     opacity: 0;
     visibility: hidden;
     
@@ -227,7 +227,7 @@
 }
 
 .Pop-User-Out {
-    transform: scale(1);
+    transform: scale(1) translate(0, 20px);
     opacity: 1;
       visibility: visible;
     pointer-events: all;

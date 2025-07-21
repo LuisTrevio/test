@@ -363,7 +363,7 @@ header, nav {z-index: 4;}
     }
 
     .nav-link-mb {
-        width: 100%;
+        width: fit-content;
         height: 60px;
 
         display: flex;
@@ -385,7 +385,7 @@ header, nav {z-index: 4;}
     }
 
     .nav-link-mb2 {
-        width: 100%;
+        width: fit-content;
         height: 60px;
 
         display: flex;
@@ -446,7 +446,7 @@ header, nav {z-index: 4;}
 
         font-family: var(--Montserrat);
         font-weight: 800;
-        font-size: 14px;
+        font-size: 17px;
         color: white;
           opacity: 0;
 

@@ -62,7 +62,7 @@ body {
     --bar-filter: #545454;
     --bar-filter-on: rgb(0, 0, 0);
     --button-buy: #000000;
-    --button-buy-on: #4f5361;
+    --button-buy-on: #404040;
 }
 
 @media (max-width: 780px) {
