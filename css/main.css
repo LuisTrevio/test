@@ -30,6 +30,16 @@ br {
     -moz-user-select: none;
 }
 
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    height: 100%;
+    transition: 0.2s ease-out;
+}
+
 body {
     background: var(--background);
     color: var(--black);

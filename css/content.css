@@ -397,12 +397,18 @@ content {
     width: 100%;
     height: 200px;
 
-    background-color: rgb(200, 200, 200);
-    border-radius: 10px;
+    background-color:rgb(229 229 229);
+    border-radius: 20px;
 
     margin-bottom: 30px;
     transition: 0.2s ease-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.shop-items:hover img {transform: scale(1.12);}
 
 .item-name {
     width: 100%;
@@ -443,7 +449,8 @@ content {
 }
 
 @media (max-width: 780px) {
-    .item-img {height: 150px; margin-bottom: 10px;}
+    .item-img {height: 150px; margin-bottom: 10px; border-radius: 80px;}
+    .shop-items:hover img {transform: scale(1);}
     .item-name, .sub-title, .item-price {text-align: center;}
     .item-name {font-size: 17px;}
     .sub-title {font-size: 13px; display: none;}

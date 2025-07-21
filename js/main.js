@@ -142,6 +142,12 @@ popFunctions.forEach(([funcName, selector, className]) => {
     };
 });
 
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && document.querySelector('.Pop-Exit.Pop-out')) {
+        Pop();
+    }
+});
+
 document.querySelectorAll('.shop-items').forEach(item => {
     if (!item.dataset.price) {
         const priceElement = item.querySelector('.item-price');
