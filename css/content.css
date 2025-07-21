@@ -365,6 +365,7 @@ content {
     cursor: pointer;
 
     transition: 0.2s ease-out;
+    text-align: start;
 }
 
 .shop-items:hover {

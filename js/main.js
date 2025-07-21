@@ -185,7 +185,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const activeSort = document.querySelector('.sort-btn.active');
     if (!activeSort) {
         const defaultBtn = document.querySelector('.sort-btn[data-sort="default"]');
-        if (defaultBtn) defaultBtn.classList.add('active');
+        const default2Btn = document.querySelector('.sort-btn-mb[data-sort="default"]');
+        if (defaultBtn) defaultBtn.classList.add('active'); default2Btn.classList.add('active'); 
     }
 });
 
