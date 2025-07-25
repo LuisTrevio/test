@@ -126,3 +126,53 @@
     background-image: url(see.svg);
     background-position: 0 0.2px;
 }
+
+.left-icon {
+    width: 32px;
+    height: 32px;
+
+    background-image: url(left.svg);
+    background-position: -2px 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+    filter: invert(1);
+}
+
+.right-icon {
+    width: 32px;
+    height: 32px;
+
+    background-image: url(right.svg);
+    background-position: 2px 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+    filter: invert(1);
+}
+
+.less-icon {
+    width: 25px;
+    height: 25px;
+
+    background-image: url(less.svg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+}
+
+.more-icon {
+    width: 25px;
+    height: 25px;
+
+    background-image: url(plus.svg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+}

@@ -207,3 +207,159 @@ if (passwordInput && togglePasswordBtn) {
         document.querySelectorAll('.pass-eye').forEach((result) => {result.classList.toggle('nosee-btn');})
     });
 }
+
+document.querySelectorAll('.nav-img').forEach((img) => {
+    img.addEventListener('click', () => {
+        const sortClass = img.getAttribute('data-sort');
+        document.querySelectorAll('.visual-img').forEach((visualImg) => {
+            if (visualImg.classList.contains(sortClass)) {
+                visualImg.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
+
+document.querySelectorAll('.carrusel-img').forEach((container) => {
+    const imgs = Array.from(container.querySelectorAll('.visual-img'));
+    const dots = Array.from(container.parentElement.querySelectorAll('.dot-img'));
+
+    container.addEventListener('scroll', function () {
+
+        let closestIdx = 0;
+        let minDiff = Infinity;
+        imgs.forEach((img, idx) => {
+            const imgRect = img.getBoundingClientRect();
+            const contRect = container.getBoundingClientRect();
+            const imgCenter = imgRect.left + imgRect.width / 2;
+            const contCenter = contRect.left + contRect.width / 2;
+            const diff = Math.abs(imgCenter - contCenter);
+            if (diff < minDiff) {
+                minDiff = diff;
+                closestIdx = idx;
+            }
+        });
+
+        dots.forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === closestIdx);
+        });
+    });
+});
+
+document.querySelectorAll('.dot-img')[0].classList.add('active');
+
+const rightButtons = Array.from(document.getElementsByClassName('button-right'));
+const leftButtons = Array.from(document.getElementsByClassName('button-left'));
+const containers = Array.from(document.getElementsByClassName('carrusel-nav'));
+
+let index = 0;
+for (const rightButton of rightButtons) {
+    const container = containers[index];
+    rightButton.addEventListener("click", function () {
+        container.scrollLeft += 150;
+    });
+    index++;
+}
+
+index = 0;
+for (const leftButton of leftButtons) {
+    const container = containers[index];
+    leftButton.addEventListener("click", function () {
+        container.scrollLeft -= 150;
+    });
+    index++;
+}
+
+containers.forEach(container => {
+    const leftButton = container.previousElementSibling;
+    leftButton.disabled = true;
+    leftButton.classList.add('icon-o-left');
+});
+
+
+containers.forEach(container => {
+    container.addEventListener("scroll", function () {
+        const rightButton = container.nextElementSibling;
+        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+            rightButton.disabled = true;
+            rightButton.classList.add('icon-o-right');
+        } else {
+            rightButton.disabled = false;
+            rightButton.classList.remove('icon-o-right');
+        }
+    });
+});
+
+containers.forEach(container => {
+    container.addEventListener("scroll", function () {
+        const leftButton = container.previousElementSibling;
+        if (container.scrollLeft === 0) {
+            leftButton.disabled = true;
+            leftButton.classList.add('icon-o-left');
+        } else {
+            leftButton.disabled = false;
+            leftButton.classList.remove('icon-o-left');
+        }
+    });
+});
+
+
+function Flip() {
+    document.querySelectorAll('.Flip-opacity').forEach((result) => {result.classList.toggle('Flip-o');})
+    document.querySelectorAll('.Flip-disable').forEach((result) => {result.classList.toggle('Flip-o2');})
+    document.querySelectorAll('.Flip-color').forEach((result) => {result.classList.toggle('Flip-c');})
+    document.querySelectorAll('.Flip-btn').forEach((result) => {result.classList.toggle('Flip-btn-o');})
+    document.querySelectorAll('.Flip-btn-r').forEach((result) => {result.classList.toggle('Flip-btnr-o');})
+    containers.forEach(container => {
+    const rightButton = container.nextElementSibling;
+    container.scrollLeft -= 150;
+    rightButton.classList.remove('icon-o-right');
+    });
+
+    // en movil no se activa este evento
+    if (window.innerWidth <= 780) {
+        document.querySelectorAll('.Flip-opacity').forEach((result) => {result.classList.remove('Flip-o');})
+        document.querySelectorAll('.Flip-color').forEach((result) => {result.classList.remove('Flip-c');})
+        document.querySelectorAll('.Flip-btn').forEach((result) => {result.classList.remove('Flip-btn-o');})
+    }
+}
+
+document.querySelectorAll('.size-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+    });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const activeSize = document.querySelector('.size-btn.active');
+    if (!activeSize) {
+        const defaultSize = document.querySelector('.size-btn[data-sort="s"]');
+        if (defaultSize) {
+            defaultSize.classList.add('active');
+        }   
+    }
+});
+
+document.querySelectorAll('.quantity-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const quantityNumber = btn.parentElement.querySelector('.quantity-number');
+        let currentValue = parseInt(quantityNumber.textContent, 10);
+        
+        if (btn.getAttribute('data-sort') === 'less') {
+            if (currentValue > 1) {currentValue--;}
+        } else if (btn.getAttribute('data-sort') === 'more') {currentValue++;}
+        quantityNumber.textContent = currentValue;
+
+        document.querySelectorAll('.ani-number').forEach((result) => {result.classList.add('n-active')});
+        setTimeout(() => {document.querySelectorAll('.ani-number').forEach((result) => {result.classList.remove('n-active')});}, 300);
+    });
+});
+
+document.querySelectorAll('.quantity-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@2010&family=Inter:opsz,wght@14..32,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/*  font-family: "Montserrat", sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979..2050&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');/**/
+
 
 * {
     margin: 0;
@@ -8,8 +8,12 @@
     scroll-behavior: smooth;
 
     --Montserrat: 'Montserrat', sans-serif;
+    --Montserrat-italic: 'Montserrat', italic;
+    --Inter-900: 'Inter', 900;
     --Inter: 'Inter', sans-serif;
     --ClimateCrisis: 'Climate Crisis', sans-serif;
+    --Rubik: 'Rubik', sans-serif;
+    --Rubik-italic: 'Rubik', italic;
 }
 
 *,::after,::before {box-sizing: border-box;}
@@ -83,3 +87,6 @@ body {
 }
 
 content {transition-delay: 50ms;}
+
+.carrusel-img::-webkit-scrollbar {display: none;}
+.carrusel-nav::-webkit-scrollbar {display: none;}
