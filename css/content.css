@@ -209,6 +209,7 @@ content {
     transition: 0.22s ease-out;
     z-index: 3;
     user-select: none;
+    border: 1.6px solid #b0acac;
 }
 
 .filter-button:hover .box-filter {
@@ -244,7 +245,7 @@ content {
     font-weight: 700;
     font-size: 14px;
 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 
     position: relative;
 }
@@ -258,6 +259,7 @@ content {
     justify-content: center;
 
     background-color: var(--button-buy);
+    color: #000;
     border-radius: 30px;
 
     cursor: pointer;
@@ -266,10 +268,10 @@ content {
     user-select: none;
 
     padding: 0 10px 0 12px;
+    border: 1.6px solid #b0acac;
 }
 
 .filter-button:hover {
-    background-color: var(--button-buy-on);
     border-radius: 26px 26px 0 0;
 }
 .filter-buy-button:hover {
@@ -284,13 +286,14 @@ content {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    filter: invert(1);
 }
 
 .icon-number {
     width: 24px;
     height: 24px;
 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 20px;
 
     font-family: var(--Montserrat);
@@ -358,7 +361,7 @@ content {
     align-items: center;
     justify-content: center;
 
-    border-radius: 20px;
+    border-radius: 30px;
 
     padding: 20px;
     transition: display 0.2s ease-out;
@@ -398,7 +401,7 @@ content {
     height: 200px;
 
     background-color:rgb(229 229 229);
-    border-radius: 20px;
+    border-radius: 22px;
 
     margin-bottom: 30px;
     transition: 0.2s ease-out;
@@ -406,6 +409,7 @@ content {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgb(188 185 185);
 }
 
 .shop-items:hover img {transform: scale(1.12);}
